@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Smart</title>
+    
+    <script
+      src="https://kit.fontawesome.com/7520d132f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts -->
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Shopping-Cart/assets/android-chrome-192x192-acf0d912.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABGpJREFUWEfFl31M1GUcwD8PJxxw4kGX1wko3k+R8mUIBKbmatGSbDJpq5attWX/WdZ638o/spW5ZW21tZXVVn9o/uXKYULlH9TQTMAlDtI4IDBUjhd5O+7l59OeH3c3OO+HSLp7/rnbPd/n+/3c9/V5BDNcmqbZgU1SygeEEEVSysVAZvj4oBCiQ0rZJIQ4BhzxeDxXZqJaXE9I07RlwBvAk0Da9eTD+z7gALDH4/Gcm+6MKUBubm5acnLyu0KIHUDyDA3HigWllJ8Eg8Gd3d3dCuqaFRdA07R84BCwYpaGY4+dBao8Hs/52I1rAPLy8ootFksNcPtNMh5R49V1fWNnZ2fjZL1TAML/vP4WGI9CAOsmeyIKoGKekpLyx010u5kDzwYCgdJITkQB3G73h0KIV26y2+Oqk1LubW9vf1VtGgDhUmv+H9l+o9xBYKUq0QjAV8CzZlrSLEmsc2WiZaSTkiTo8wc50z/C2YGRGzU8Wf5rj8ezTYQ7XI9Zk9mY6+CdkqVI4MTlK1gErHFmYk+Zw+aaRs5fGZsthOoLCxSA6nD742lZmTWXgw8W0usLUPXTaQb8ynNQ6MjgYHkhTx37kwbv0GwB1Lmtwu127xNCPBdPy1tFGk/nZ3Okq5eXj/8VFVFx+/6hInafbuf45cEpR1MtSWRZkxnXdQb8oWnhpJRfKg+cAkriSb5fms+j7ju4OOansraJoYC5wux0K28Xa6x1ZnHJ5yfHZqV3PEjl0UZGQroZSIPygFcI4YgnsWWxkw/K1CyC9mEf7zW18dvFqf9Y7c0RguqHi1EQm2ua6Bj2Uea08+39q3jkaANtQ3HHAFLKPgUQEkJY4gEoV+8uW4YCiazm/hH2tXZR291nJKZaS+alU11RjF+/yn2HTzIYCJEkYGfREr459y8dI6YA+rQAEaPl2bexfcUilmfNjYLUXxrkxfoWhoM6tjkW6irLjM/OYR97z3Tw84U+rkYITQIgpTQATEMQe+4ep52XVuWx2jHP2Pqh8zKv/z4x7u91ZbJnTQEO68Tkbh8eM5K0rmfANBGNEEyXhAV2G6Mhne7R8agSixB8sWE5611ZDAVDlB06Ed1THnhMc/HMsmwWpFtVjHm+vpVfLvRNm4SmZfjR2gICuuTNk1MvNY9rLnbdvdToDxsOn2ShLZUqt5NPm/8x8sJqSeKz9XcZkLXdXnbUt8YFiJShaSNSZVie46Dix4ZoE1KJuXdtAZsWzufzli4+PtPJakcG35UXsqW2idbBUcPYtoIcXit0s//vHnY1tpl5YOu0rXj78oW8sDIPX0jnVO8Q/f4gd2bayLenG4pVjHUp0TLSqK4ooWt0nJourzHintBc9Iz52VbXjHd8ooPGrIlWrH7UNM10GC2am0rpfDu5tlSjtJRS1Qsm54XSEZFTsVdQLQMj/Hpx0PhusiaGURhAdZvEjWMFkdALiQJI+JUsHAp1HU/MpTSSKAm9lkcgEvowiUAk9Gk2uW4T9jiNbR636nn+H7uy7VQaVDO3AAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAelJREFUOE+tk8trE1EUh7+bybOJkClCExzIC0uktVAC4qO1oqI71250VYsLwY3gTvsn2KJYWnHhQnAhWETEjQtDF9UWV7UaU2PSqC1V0ghT20ymV2ZMQhof+Lq7e87vfJzfOfcKWk4kEulVFGUIOAxEa+m3wGPTNMfz+fzz5hJRv2ia5nO5XCNCiEGgEW/hSynlDcMwzheLxS9WzhbWih8JIfpbO/rRXUqZNgzjuAWxAbFYbFwIceZ3iusaKeVELpcbEjXPs/VuHAKSQT8eh4NMeQ29av6MK03TTIl4PH4dOGup/E6FmwNdTOZX8CoOott8XJrJ/qqxMQvwCui0VIfC7VxOJTj6YAZTSg50BJlaXqVbDXAwrLIJTMwX7VztZCzABuC2Atu9Lu4d6+WdvsHVuQLppRJtToX0iT0M3H/KyUSIu2+WKVWqdUBlC8CKqm4npzt3cGpnmIeLHxmeXeD2kR4UYHSuwJMPpWZLNqBhYXd7gOqmZH5Vpz+kMro/yd7JaTp8brrUAMOpBOemXvJspbzFQmOIfaEgg0mNOwtL9IVUPq1XuPX6PVf27eLaiwIXeqJcnM6Q/bxWB4x9t0bN70Xze+w5LOrrttCKhds8ZMt6s/9va/znh/RfnnIT5O8+U/Ne/vQ7fwVtc9VjHAH+HgAAAABJRU5ErkJggg=="
+    />
+    <script async type="module" crossorigin src="/Shopping-Cart/assets/index-77ad664d.js"></script>
+    <link rel="stylesheet" href="/Shopping-Cart/assets/index-5e24dfd0.css">
+  </head>
+  <body dark-mode>
+    <header darker>
+      <h1 highlight id="header-text" class="header-text">Shop Smart</h1>
+      <section>
+        <div class="toggle-container">
+          <input type="checkbox" class="toggle" id="check" />
+          <label for="check" id="toggleSwitch"></label>
+        </div>
+      </section>
+    </header>
+    <main dark-mode>
+      <h1 to-yellow>Shop Smart</h1>
+    </main>
+    <nav>
+      <ul class="navbuttons-container" darker>
+        <li class="all-button" data-category-button>
+          <span highlight>All PRODUCTS</span>
+        </li>
+        <li class="womens-category" data-category-button>
+          <span highlight>women's clothing</span>
+        </li>
+        <li data-category-button><span highlight>men's clothing</span></li>
+        <li data-category-button><span highlight>jewelery</span></li>
+        <li data-category-button><span highlight>electronics</span></li>
+      </ul>
+    </nav>
+    <section class="content-container" dark-mode>
+      <div class="product-list" id="product-list" dark-mode></div>
+    </section>
+    <button class="fixed-shopping-cart-button" id="openModal" to-dark>
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+    <section class="shopping-cart-modal" id="shopping-cart-modal">
+      <article class="modal-container" to-grey>
+        <button class="close-modal-button" id="closeModal">X</button>
+        <h1 class="cart-heading">Smart Cart</h1>
+        <section class="cart-and-checkout-container">
+          <div class="ul-container">
+            <ul class="cart-items-list"></ul>
+          </div>
+          <div class="checkout-container" to-grey>
+            <h1 class="checkout" highlight>Checkout</h1>
+            <div class="checkout-content">
+              <div class="quantity-price-button-container">
+                <p class="quantity-container" highlight>
+                  Number of items: <span id="numberOfItemsContent"></span>
+                </p>
+                <p class="price-container" highlight>
+                  Price: <span id="totalContent"></span>
+                </p>
+                <a class="purchase-button" id="purchase-button">Purchase</a>
+                <div>
+                  <button class="purchase-button remove-all">
+                    Remove All Items
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+    <section class="purchase-popup-modal" id="purchase-popup-modal">
+      <div class="popup-modal-container" to-grey>
+        <button class="close-popup-button" id="close-popup-button">X</button>
+        <div class="popup-content-container">
+          <div class="popup-text-container">
+            <h3 class="popup-main-text">Order Succesfully Placed!</h3>
+            <p class="popup-text">
+              please prepare
+              <span class="amount-to-pay" id="amount-to-pay"></span>, upon
+              delivery
+            </p>
+          </div>
+          <div class="popup-button-container">
+            <button class="popup-button" id="close-popup-button">
+              Return to Homepage
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1></h1>
+    </footer>
+    
+  </body>
+</html>
